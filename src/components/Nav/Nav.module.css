@@ -1,0 +1,11 @@
+.navbar {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    border: 1px solid;
+}
+
+.linkItem a {
+    color: white;
+}
