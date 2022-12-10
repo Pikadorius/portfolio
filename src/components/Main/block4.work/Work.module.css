@@ -1,0 +1,32 @@
+.wrapper {
+    background-color: #ded4bc;
+    height: 20vh;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid;
+}
+
+.title {
+    height: 80px;
+    border: 1px dashed grey;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.title span {
+    display: inline-block;
+    align-self: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+

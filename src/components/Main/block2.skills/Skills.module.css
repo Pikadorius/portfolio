@@ -1,24 +1,27 @@
 .wrapper {
     background-color: #baf3ad;
+    padding: 20px;
 }
 
 .skillsCard {
+    box-sizing: border-box;
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
+    border: 1px solid;
+    padding: 20px;
 }
 
 .skillsCardName {
     height: 80px;
-    border: 1px dashed grey;
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
 .skillsCardName span {
     display: inline-block;
     align-self: center;
