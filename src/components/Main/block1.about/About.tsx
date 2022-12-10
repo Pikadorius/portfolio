@@ -5,7 +5,7 @@ import my_photo from '../../../assets/pics/aboutme.jpg'
 const About = () => {
     return (
         <div className={s.wrapper}>
-            <div className={s.myCard}>
+            <div className={s.aboutCard}>
                 <div className={s.text}>
                     <h3>Hello!</h3>
                     <h2>My name is Egor.</h2>

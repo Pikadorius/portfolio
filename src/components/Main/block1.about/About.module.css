@@ -1,17 +1,19 @@
 .wrapper {
     background-color: #f3adad;
-    padding: 20px;
     height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-.myCard {
+.aboutCard {
+    box-sizing: border-box;
     width: 80%;
-    height: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: 1px solid;
+    padding: 20px;
 }
 
 .text {
@@ -24,5 +26,5 @@
 }
 
 .photo img {
-    max-width: 30vh;
+    max-width: 30vw;
 }
