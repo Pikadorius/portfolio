@@ -1,0 +1,28 @@
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid;
+}
+
+.logo {
+    align-self: center;
+}
+
+.logo img {
+    padding-top: 10px;
+    height: 60px;
+}
+
+.skillTitle {
+    font-size: 20px;
+    font-weight: 600;
+    align-self: center;
+    padding: 10px;
+}
+
+.skillDescription {
+    height: 70px;
+    text-align: center;
+    border: 1px solid blue;
+}
