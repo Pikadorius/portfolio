@@ -1,7 +1,10 @@
 import React from 'react';
 import s from './Nav.module.css'
 
+
 const Nav = () => {
+
+
     return (
             <div className={s.navbar}>
                 <div className={s.linkItem}><a href={'#main'}>Main</a></div>
