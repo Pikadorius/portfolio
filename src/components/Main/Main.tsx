@@ -10,11 +10,11 @@ import Contacts from './block5.contacts/Contacts';
 const Main = () => {
     return (
         <div className={s.wrapper}>
-            <About/>
-            <Skills/>
-            <Projects/>
+            <About id={'main'}/>
+            <Skills id={'skills'}/>
+            <Projects id={'projects'}/>
             <Work/>
-            <Contacts/>
+            <Contacts id={'contacts'}/>
         </div>
     );
 };

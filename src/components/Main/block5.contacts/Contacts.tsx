@@ -1,11 +1,16 @@
 import React from 'react';
 import s from './Contacts.module.css'
 
-const Contacts = () => {
+type ContactsType = {
+    id: string
+}
+
+const Contacts = (props: ContactsType) => {
     return (
         <div className={s.wrapper}>
             <div className={s.container}>
-                <div className={s.title}><span>My contacts</span></div>
+                <div className={s.title}><span id={props.id}>My contacts</span></div>
+                <div>Or you can leave yours here:</div>
                 <form action="#" className={s.form}>
                     <div className={s.item}>
                         <label htmlFor="phone">Your phone:</label>

@@ -1,8 +1,10 @@
 .wrapper {
     background-color: #baf3ad;
+    min-height: 60vh;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 1% 0;
 }
 
 .skillsCard {
@@ -13,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     border: 1px solid;
-    padding: 20px;
+    padding: 1%;
 }
 
 .skillsCardName {
@@ -22,7 +24,7 @@
     justify-content: center;
     width: 100%;
     border: 1px dashed;
-    margin-bottom: 20px;
+    margin-bottom: 1%;
 }
 
 .skillsCardName span {
@@ -35,5 +37,12 @@
 .skillsField {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 748px) {
+    .skillsCard {
+        width: 100%;
+    }
 }

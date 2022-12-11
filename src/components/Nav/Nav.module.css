@@ -2,10 +2,18 @@
     width: 300px;
     display: flex;
     justify-content: space-between;
-    margin-right: 11%;
+    margin-right: 10%;
     border: 1px solid;
 }
 
 .linkItem a {
     color: white;
 }
+
+@media (max-width: 748px) {
+    .navbar {
+        margin: 0;
+        max-width: 90%;
+    }
+}
+

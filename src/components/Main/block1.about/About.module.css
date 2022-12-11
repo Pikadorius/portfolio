@@ -1,23 +1,25 @@
 .wrapper {
-    background-color: #f3adad;
-    height: 80vh;
+    background-color: #d8cece;
+    min-height: 100vh;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 1% 0;
 }
 
-.aboutCard {
+.myCard {
+    margin-top: 60px;
     box-sizing: border-box;
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     border: 1px solid;
-    padding: 20px;
 }
 
-.text {
-    width: 30%;
+.infoText {
+    min-width: 30%;
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -25,6 +27,25 @@
     background-color: white;
 }
 
-.photo img {
-    max-width: 30vw;
+.imgContainer {
+    max-width: 50%;
+    padding: 1%;
+}
+
+.imgContainer img {
+    max-width: 100%;
+}
+
+@media (max-width: 748px) {
+    .myCard {
+        width: 100%;
+    }
+    .imgContainer {
+        max-width: 90%;
+    }
+
+    .infoText {
+        max-width: 90%;
+    }
+
 }

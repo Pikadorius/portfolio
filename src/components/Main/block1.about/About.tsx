@@ -1,17 +1,21 @@
 import React from 'react';
 import s from './About.module.css'
-import my_photo from '../../../assets/pics/aboutme.jpg'
+import myImg from '../../../assets/pics/aboutme.jpg'
 
-const About = () => {
+type AboutType = {
+    id: string
+}
+
+const About = (props: AboutType) => {
     return (
-        <div className={s.wrapper}>
-            <div className={s.aboutCard}>
-                <div className={s.text}>
+        <div className={s.wrapper} id={props.id}>
+            <div className={s.myCard}>
+                <div className={s.infoText}>
                     <h3>Hello!</h3>
                     <h2>My name is Egor.</h2>
                     <p>I am trainee front-end developer!</p>
                 </div>
-                <div className={s.photo}><img src={my_photo} alt={'Me and my family'}/></div>
+                <div className={s.imgContainer}><img src={myImg} alt={'Me and my family'}/></div>
             </div>
         </div>
     );
