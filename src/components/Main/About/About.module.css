@@ -1,5 +1,4 @@
 .wrapper {
-    background-color: #d8cece;
     min-height: 100vh;
     max-width: 100vw;
     display: flex;
@@ -8,7 +7,6 @@
 }
 
 .myCard {
-    margin-top: 60px;
     box-sizing: border-box;
     width: 80%;
     display: flex;

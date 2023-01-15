@@ -15,7 +15,6 @@ const About = (props: AboutType) => {
                     <h2>My name is Egor.</h2>
                     <p>I am trainee front-end developer!</p>
                 </div>
-                <div className={s.imgContainer}><img src={myImg} alt={'Me and my family'}/></div>
             </div>
         </div>
     );

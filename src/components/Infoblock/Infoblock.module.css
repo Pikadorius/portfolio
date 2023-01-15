@@ -1,0 +1,92 @@
+.wrapper {
+    background-color: #1d1b19;
+    position: fixed;
+    min-width:32%;
+    max-width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoBlock {
+    width: 70%;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+.avatar {
+    display: block;
+    max-width: 80%;
+    padding: 2%;
+}
+
+.border1 {
+    border: 2px solid  rgba(255,255,255,.2);
+    border-radius: 2px;
+    background: transparent;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+}
+
+.border2 {
+    border: 2px solid  rgba(255,255,255,.2);
+    border-radius: 2px;
+    background: transparent;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    bottom: -20px;
+    right: -20px;
+}
+
+.infoBlock:hover .border1, .infoBlock:hover .border2{
+    border-color: rgba(255,255,255,.4);
+}
+
+@media (max-width: 748px) {
+    .wrapper {
+        margin-top: 120px;
+        position: static;
+        max-width: 100%;
+        z-index: 2;
+    }
+}
+
+
+.shining {
+    text-align: center;
+    text-transform: uppercase;/*
+    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    !*animation: shine 3s infinite linear;*!*/
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+    60% {
+        background-position: 600px;
+    }
+    100% {
+        background-position: 600px;
+    }
+    60% {
+        background-position: 600px;
+    }
+    0% {
+        background-position: 0;
+    }
+}
