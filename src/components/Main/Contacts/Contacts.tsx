@@ -9,8 +9,8 @@ const Contacts = (props: ContactsType) => {
     return (
         <div className={s.wrapper}>
             <div className={s.container}>
-                <div className={s.title}><span id={props.id}>My contacts</span></div>
-                <div>Or you can leave yours here:</div>
+                <div className={s.title}><span id={props.id}>Ready for work, hire me!</span></div>
+                <div>You can leave your questions and here:</div>
                 <form action="#" className={s.form}>
                     <div className={s.item}>
                         <label htmlFor="phone">Your phone:</label>
