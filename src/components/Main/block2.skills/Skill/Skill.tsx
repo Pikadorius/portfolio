@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import {SkillType} from '../../../../reducers/skillsReducer';
 import Card from '@mui/material/Card';
+import Button from '@mui/material/Button';
 
 
 const style = {
@@ -27,9 +28,11 @@ const Skill: React.FC<SkillType> = (props) => {
 
     return (
         // <div className={s.skillCard} onClick={handleOpen}>
-            <Card className={s.skillCard} onClick={handleOpen}>
+        <Card className={s.skillCard} onClick={handleOpen}>
             <div className={s.logo}><img src={props.logo} alt={'logo'}/></div>
             <div className={s.skillTitle}>{props.title}</div>
+            <div className={s.skillTitle}>Click to see more!</div>
+
             <Modal
                 open={open}
                 onClose={handleClose}
@@ -37,7 +40,7 @@ const Skill: React.FC<SkillType> = (props) => {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style} onBlur={handleClose}>
-                    <Card id="modal-modal-description" sx={{ mt: 2, display: 'flex', flexDirection: 'column'}}>
+                    <Card id="modal-modal-description" sx={{mt: 2, display: 'flex', flexDirection: 'column'}}>
                         <div className={s.logo}><img src={props.logo} alt={'logo'}/></div>
                     </Card>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -45,7 +48,8 @@ const Skill: React.FC<SkillType> = (props) => {
                     </Typography>
                 </Box>
             </Modal>
-            </Card>
+
+        </Card>
         // </div>
     );
 };

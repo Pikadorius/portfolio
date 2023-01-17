@@ -4,7 +4,7 @@ import myself from '../../assets/pics/aboutme.jpg';
 import AnimatedText from 'react-animated-text-content';
 
 const Infoblock = () => {
-    const init = ['Front-End Developer', 'Egor Karpuk', 'All You need!', 'Ready to hard work']
+    const init = ['Front-End Developer', 'Egor Karpuk', 'Strong skills' , 'Ready to hard work']
     const [text, setText] = useState(init[0])
 
     useEffect(() => {
