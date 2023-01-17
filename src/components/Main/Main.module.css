@@ -1,6 +1,7 @@
 .wrapper {
     margin-left: 32%;
     margin-top: 60px;
+    width: 100%;
 }
 
 @media (max-width: 748px) {

@@ -9,6 +9,8 @@ const Footer = () => {
     return (
         <div className={s.wrapper}>
             <div className={s.container}>
+                <div className={s.border1}></div>
+                <div className={s.border2}></div>
                 <div className={s.title}><span>Karpuk Egor</span></div>
                 <div className={s.social}>
                     <div className={s.item}>

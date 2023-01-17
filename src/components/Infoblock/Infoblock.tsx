@@ -12,7 +12,7 @@ const Infoblock = () => {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
         let timer = setInterval(() => {
-            setText(init[random(0, 2)])
+            setText(init[random(0, 3)])
         }, 3000)
         return () => clearInterval(timer)
     }, [])

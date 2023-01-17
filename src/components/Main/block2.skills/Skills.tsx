@@ -1,13 +1,11 @@
 import React from 'react';
 import s from './Skills.module.css'
 import Skill from './Skill/Skill';
-import reactPng from '../../../assets/icons/react.png'
-import reduxPng from '../../../assets/icons/redux.png'
-import htmlPng from '../../../assets/icons/html.png'
 import {useSelector} from 'react-redux';
 import {StateType} from '../../../redux/store';
 import {SkillType} from '../../../reducers/skillsReducer';
 import Carousel from 'react-material-ui-carousel'
+import backgr from '../../../assets/pics/background.png'
 
 
 type SkillsType = {
@@ -30,6 +28,8 @@ const Skills = (props: SkillsType) => {
         return (
             <div className={s.wrapper}>
                 <div className={s.skillsCard}>
+                    <div className={s.border1}></div>
+                    <div className={s.border2}></div>
                     <div className={s.skillsCardName} id={props.id}><span>My skills</span></div>
                     <div className={s.skillsField}>
                         <Carousel sx={{width: '50%'}} animation={'slide'} navButtonsAlwaysVisible={true}>
@@ -45,9 +45,11 @@ const Skills = (props: SkillsType) => {
     return (
         <div className={s.wrapper}>
             <div className={s.skillsCard}>
+                <div className={s.border1}></div>
+                <div className={s.border2}></div>
                 <div className={s.skillsCardName} id={props.id}><span>My skills</span></div>
                 <div className={s.skillsField}>
-                    <Carousel sx={{width: '50%'}} animation={'slide'} navButtonsAlwaysVisible={true}>
+                    <Carousel sx={{width: '70%', margin: '2%'}} animation={'slide'} navButtonsAlwaysVisible={true}>
                         <div style={{display: 'flex', justifyContent: 'space-around'}}>
                             {SkillsField[0]}
                             {SkillsField[1]}

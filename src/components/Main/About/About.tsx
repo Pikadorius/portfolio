@@ -10,10 +10,23 @@ const About = (props: AboutType) => {
     return (
         <div className={s.wrapper} id={props.id}>
             <div className={s.myCard}>
+                <div className={s.border1}></div>
+                <div className={s.border2}></div>
                 <div className={s.infoText}>
-                    <h3>Hello!</h3>
-                    <h2>My name is Egor.</h2>
-                    <p>I am trainee front-end developer!</p>
+                    <h3 className={s.subtitle}>About me</h3>
+                    <h2 className={s.title}>Front-end Developer</h2>
+                    <p className={s.desc}>I'm frontend developer with
+                        experience in creating SPA using
+                        React, Redux, TypeScript.
+                        Knowledge in user interface,
+                        testing, and debugging processes. I
+                        improving my skills in this direction
+                        and plan to expand them with new
+                        technologies, such as Angular.
+                        I usually spend my free time
+                        reading IT-literature (M.Fauler),
+                        Codewars and improving my
+                        English. Open to your suggestions</p>
                 </div>
             </div>
         </div>

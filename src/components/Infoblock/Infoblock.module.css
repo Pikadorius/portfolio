@@ -65,6 +65,8 @@
 
 
 .shining {
+    height: 80px;
+    color: #987750;
     text-align: center;
     text-transform: uppercase;/*
     background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);

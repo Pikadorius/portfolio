@@ -2,6 +2,10 @@
     width: 100%;
     height: 60px;
     background-color: #101010;
+    background-image: url("../../assets/pics/background.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
     opacity: 0.9;
     display: flex;
     justify-content: flex-end;
