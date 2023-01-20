@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Project.module.css'
+import Button from '@mui/material/Button';
 
 type ProjectType = {
     pic: string
@@ -18,7 +19,7 @@ const Project = (props: ProjectType) => {
             }}>
                 <div className={s.btnWrapper}>
                     <a target='_blank' rel='noreferrer' href={props.link}>
-                        <button>Watch</button>
+                        <Button size={'small'}>Watch</Button>
                     </a>
                 </div>
             </div>

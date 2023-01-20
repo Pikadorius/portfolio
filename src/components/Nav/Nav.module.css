@@ -1,11 +1,12 @@
 .navbar {
-    width: 300px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     margin-right: 10%;
 }
 
 .linkItem a {
+    font-size: 24px;
     color: white;
     text-decoration: none;
 }
@@ -33,3 +34,12 @@
     }
 }
 
+@media (max-width: 400px) {
+    .navbar {
+        width: 300px
+    }
+
+    .linkItem a {
+        font-size: 18px;
+    }
+}
