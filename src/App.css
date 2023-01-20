@@ -8,18 +8,21 @@
     background-color: #1d1b19;
     word-break: break-word;
 }
+
 .divider {
     display: flex;
     flex-wrap: wrap;
 }
 
-body, h1, h2, h3, h4, h5, h5, p, img {
-    margin: 0;
-    padding:0;
-}
-
 @media (max-width: 748px) {
     .divider {
         flex-direction: column;
+        align-items: center;
     }
+}
+
+.MuiToolbar-root {
+    padding-left: 0!important;
+    padding-right: 0!important;
+    min-height: 60px!important;
 }

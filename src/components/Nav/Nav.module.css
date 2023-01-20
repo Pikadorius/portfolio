@@ -14,14 +14,14 @@
     transition: color 2s ease-out 100ms
 }
 
-a {
+.linkItem a {
     box-shadow: inset 0 0 0 0 #987750;
     color: #987750;
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-a:hover {
+.linkItem a:hover {
     box-shadow: inset 100px 0 0 0 #987750;
     color: white;
 }

@@ -26,6 +26,7 @@
 }
 
 .title {
+    text-align: center;
     color: #987750;
 }
 
@@ -35,7 +36,7 @@
 
 .border1 {
     border: 2px solid  rgba(255,255,255,.2);
-    border-radius: 2px;
+    border-radius: 7px;
     background: transparent;
     position: absolute;
     top: 20px;
@@ -46,7 +47,7 @@
 
 .border2 {
     border: 2px solid  rgba(255,255,255,.2);
-    border-radius: 2px;
+    border-radius: 7px;
     background: transparent;
     position: absolute;
     left: 20px;

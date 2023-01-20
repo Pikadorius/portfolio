@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import s from './Infoblock.module.css'
 import myself from '../../assets/pics/aboutme.jpg';
 import AnimatedText from 'react-animated-text-content';
+import Fade from '@mui/material/Fade';
 
 const Infoblock = () => {
     const init = ['Front-End Developer', 'Egor Karpuk', 'Strong skills' , 'Ready to hard work']
@@ -19,6 +20,7 @@ const Infoblock = () => {
 
     return (
         <div className={s.wrapper}>
+            <Fade appear={true} in={true} timeout={6000}>
             <div className={s.infoBlock}>
                 <div className={s.border1}></div>
                 <div className={s.border2}></div>
@@ -48,6 +50,7 @@ const Infoblock = () => {
                 </AnimatedText>
                 <h3>Hire me</h3>
             </div>
+            </Fade>
         </div>
     )
         ;

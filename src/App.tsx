@@ -3,18 +3,17 @@ import './App.css';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Infoblock from './components/Infoblock/Infoblock';
+import HideAppBar from './common/AppBar/AppBar';
 
 function App() {
 
     return (
         <div className="App">
-            <Header />
-            <div className={'divider'}>
-                <Infoblock/>
-                <Main/>
-
-            </div>
-
+            <HideAppBar children={<Header/>}/>
+                <div className={'divider'}>
+                    <Infoblock/>
+                    <Main/>
+                </div>
         </div>
     );
 }

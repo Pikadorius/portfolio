@@ -25,12 +25,14 @@
 }
 
 .skillTitle {
+    color: #987750;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
 }
 
 .skillDescription {
+    align-self: center;
     width: 90%;
     text-align: center;
     border: 1px solid blue;
