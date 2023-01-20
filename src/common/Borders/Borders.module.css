@@ -1,0 +1,25 @@
+.border1 {
+    border: 2px solid  rgba(255,255,255,.2);
+    border-radius: 5px;
+    background: transparent;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+.border2 {
+    border: 2px solid  rgba(255,255,255,.2);
+    border-radius: 5px;
+    background: transparent;
+    position: absolute;
+    left: 20px;
+    top:0;
+    bottom: 0;
+    right: 20px;
+}
+
+.container:hover .border1, .container:hover .border2 {
+    border-color: rgba(255,255,255,.4);
+}

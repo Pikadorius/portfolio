@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import s from './Infoblock.module.css'
+import common from '../../common/commonStyles/Common.module.css'
 import myself from '../../assets/pics/aboutme.jpg';
 import AnimatedText from 'react-animated-text-content';
 import Fade from '@mui/material/Fade';
 
 const Infoblock = () => {
-    const init = ['Front-End Developer', 'Egor Karpuk', 'Strong skills' , 'Ready to hard work']
+    const init = ['Front-End Developer', 'Egor Karpuk', 'Strong specialist' , 'Ready to work']
     const [text, setText] = useState(init[0])
 
     useEffect(() => {
@@ -27,8 +28,6 @@ const Infoblock = () => {
                 <img className={s.avatar} src={myself} alt="me"/>
                 <h3>Hi there!</h3>
                 <h3>I am</h3>
-                {/*<h2 className={s.shining}>{text}</h2>*/}
-
                 <AnimatedText
                     type="words" // animate words or chars
                     animation={{
@@ -48,7 +47,7 @@ const Infoblock = () => {
                 >
                     {text}
                 </AnimatedText>
-                <h3>Hire me</h3>
+                <h3 style={{zIndex:'1'}}><a className={common.superLink} href={'#contacts'}>Hire me</a></h3>
             </div>
             </Fade>
         </div>

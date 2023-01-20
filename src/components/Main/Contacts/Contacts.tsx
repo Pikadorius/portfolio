@@ -1,5 +1,7 @@
 import React from 'react';
 import s from './Contacts.module.css'
+import common from '../../../common/commonStyles/Common.module.css'
+import Borders from '../../../common/Borders/Borders';
 
 type ContactsType = {
     id: string
@@ -7,12 +9,11 @@ type ContactsType = {
 
 const Contacts = (props: ContactsType) => {
     return (
-        <div className={s.wrapper}>
-            <div className={s.container}>
-                <div className={s.border1}></div>
-                <div className={s.border2}></div>
-                <div className={s.title}><span id={props.id}>Ready for work, hire me!</span></div>
-                <div>You can leave your questions and here:</div>
+        <div className={common.sectionWrapper}>
+            <div className={common.sectionContainer}>
+                <Borders/>
+                <div id={props.id} className={common.sectionName}><span>Contact me!</span></div>
+                <div>You can leave your questions and suggestions here:</div>
                 <form action="#" className={s.form}>
                     <div className={s.item}>
                         <label htmlFor="phone">Your phone:</label>

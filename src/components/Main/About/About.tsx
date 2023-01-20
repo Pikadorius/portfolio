@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './About.module.css'
-import myImg from '../../../assets/pics/aboutme.jpg'
+import common from '../../../common/commonStyles/Common.module.css'
+import Borders from '../../../common/Borders/Borders';
 
 type AboutType = {
     id: string
@@ -8,10 +9,9 @@ type AboutType = {
 
 const About = (props: AboutType) => {
     return (
-        <div className={s.wrapper} id={props.id}>
+        <div className={`${common.sectionWrapper} ${s.wrapper}`} id={props.id}>
             <div className={s.myCard}>
-                <div className={s.border1}></div>
-                <div className={s.border2}></div>
+                <Borders/>
                 <div className={s.infoText}>
                     <h3 className={s.subtitle}>About me</h3>
                     <h2 className={s.title}>Front-end Developer</h2>

@@ -1,0 +1,73 @@
+.sectionWrapper {
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+.sectionContainer {
+    position: relative;
+    box-sizing: border-box;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+
+.sectionName {
+    background-image: url("../../assets/pics/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1%;
+    color: #987750;
+}
+
+.sectionName span {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.sectionItemsField {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 748px) {
+    .sectionContainer {
+        width: 95%;
+    }
+}
+
+/*links*/
+.superLink {
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #987750;
+    color: #987750;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+
+.superLink:hover {
+    transition: color 2s ease-out 100ms
+}
+
+.superLink:hover {
+    box-shadow: inset 100px 0 0 0 #987750;
+    color: white;
+}
+

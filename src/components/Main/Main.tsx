@@ -1,11 +1,11 @@
 import React from 'react';
 import s from './Main.module.css'
 import About from './About/About';
-import Skills from './block2.skills/Skills';
-import Projects from './block3.projects/Projects';
 import Contacts from './Contacts/Contacts';
 import Footer from '../Footer/Footer';
 import Slide from '@mui/material/Slide';
+import Skills from './Skills/Skills';
+import Projects from './Projects/Projects';
 
 
 const Main = () => {

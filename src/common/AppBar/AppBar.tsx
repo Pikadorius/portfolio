@@ -23,7 +23,7 @@ function HideOnScroll(props: Props) {
     });
 
     return (
-        <Slide appear={false} direction="down" in={!trigger}>
+        <Slide appear={false} direction="down" in={!trigger} timeout={500}>
             {children}
         </Slide>
     );
