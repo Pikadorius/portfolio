@@ -37,14 +37,14 @@
 }
 
 .skillsField {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .border1 {
-    border: 2px solid  rgba(255,255,255,.2);
+    border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 7px;
     background: transparent;
     position: absolute;
@@ -55,20 +55,27 @@
 }
 
 .border2 {
-    border: 2px solid  rgba(255,255,255,.2);
+    border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 7px;
     background: transparent;
     position: absolute;
     left: 20px;
-    top:0;
+    top: 0;
     bottom: 0;
     right: 20px;
 }
 
-.skillsCard:hover .border1, .skillsCard:hover .border2{
-    border-color: rgba(255,255,255,.4);
+.skillsCard:hover .border1, .skillsCard:hover .border2 {
+    border-color: rgba(255, 255, 255, .4);
 }
 
+
+.threeSkills {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
 
 @media (max-width: 748px) {
     .skillsCard {

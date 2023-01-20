@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    width: 25%;
     border: 1px solid;
     margin: 2% 0;
 }
@@ -43,6 +43,6 @@
 
 @media (max-width: 748px){
     .skillCard {
-        width: 100%;
+        width: 80%;
     }
 }

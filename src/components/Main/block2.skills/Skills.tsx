@@ -32,8 +32,8 @@ const Skills = (props: SkillsType) => {
                     <div className={s.border2}></div>
                     <div className={s.skillsCardName} id={props.id}><span>My skills</span></div>
                     <div className={s.skillsField}>
-                        <Carousel sx={{width: '50%'}} animation={'slide'} navButtonsAlwaysVisible={true}>
-                            {SkillsField}
+                        <Carousel sx={{width: '50%', border: '1px solid white'}} animation={'slide'} navButtonsAlwaysVisible={true}>
+                           {SkillsField}
                         </Carousel>
 
                     </div>
@@ -49,23 +49,23 @@ const Skills = (props: SkillsType) => {
                 <div className={s.border2}></div>
                 <div className={s.skillsCardName} id={props.id}><span>My skills</span></div>
                 <div className={s.skillsField}>
-                    <Carousel sx={{width: '70%', margin: '2%'}} animation={'slide'} navButtonsAlwaysVisible={true}>
-                        <div style={{display: 'flex', justifyContent: 'space-around'}}>
+                    <Carousel sx={{width: '100%', margin: '2%'}} animation={'slide'} navButtonsAlwaysVisible={true}>
+                        <div className={s.threeSkills}>
                             {SkillsField[0]}
                             {SkillsField[1]}
                             {SkillsField[2]}
                         </div>
-                        <div style={{display: 'flex', justifyContent: 'space-around'}}>
+                        <div className={s.threeSkills}>
                             {SkillsField[3]}
                             {SkillsField[4]}
                             {SkillsField[5]}
                         </div>
-                        <div style={{display: 'flex', justifyContent: 'space-around'}}>
+                        <div className={s.threeSkills}>
                             {SkillsField[6]}
                             {SkillsField[7]}
                             {SkillsField[8]}
                         </div>
-                        <div style={{display: 'flex', justifyContent: 'space-around'}}>
+                        <div className={s.threeSkills}>
                             {SkillsField[9]}
                             {SkillsField[10]}
                             {SkillsField[11]}

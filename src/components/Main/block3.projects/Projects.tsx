@@ -12,6 +12,7 @@ type ProjectsType = {
 }
 
 const Projects = (props: ProjectsType) => {
+
     return (
         <div className={s.wrapper}>
             <div className={s.projectsCard}>
