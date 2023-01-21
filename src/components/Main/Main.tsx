@@ -10,7 +10,7 @@ import Projects from './Projects/Projects';
 
 const Main = () => {
     return (
-        <div className={s.wrapper}>
+        <main className={s.wrapper}>
             <Slide in={true} timeout={2000} direction={'down'}>
                 <div><About id={'main'}/></div>
             </Slide>
@@ -26,7 +26,7 @@ const Main = () => {
             <Slide in={true} timeout={500} direction={'down'}>
                 <div> <Footer/></div>
             </Slide>
-        </div>
+        </main>
     );
 };
 

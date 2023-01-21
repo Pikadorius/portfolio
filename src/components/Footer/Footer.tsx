@@ -9,7 +9,7 @@ import Borders from '../../common/Borders/Borders';
 
 const Footer = () => {
     return (
-        <div className={common.sectionWrapper}>
+        <footer className={common.sectionWrapper}>
             <div className={common.sectionContainer}>
                 <Borders/>
                 <div className={common.sectionName}><span>Karpuk Egor</span></div>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
                 <div className={s.copyRights}> © 2022 All rights reserved</div>
             </div>
-        </div>
+        </footer>
     );
 };
 

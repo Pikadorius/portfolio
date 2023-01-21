@@ -9,7 +9,7 @@ type ContactsType = {
 
 const Contacts = (props: ContactsType) => {
     return (
-        <div className={common.sectionWrapper}>
+        <section className={common.sectionWrapper}>
             <div className={common.sectionContainer}>
                 <Borders/>
                 <div id={props.id} className={common.sectionName}><span>Contact me!</span></div>
@@ -32,7 +32,7 @@ const Contacts = (props: ContactsType) => {
                     <button>Send</button>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

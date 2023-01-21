@@ -16,31 +16,31 @@ type ProjectsType = {
 const Projects = (props: ProjectsType) => {
 
     return (
-        <div className={common.sectionWrapper}>
+        <section className={common.sectionWrapper}>
             <div className={common.sectionContainer}>
                 <Borders/>
-                <div className={common.sectionName} id={props.id}><span>My projects</span></div>
-
-                <div className={common.sectionItemsField}>
-
-                    <Carousel className={common.carousel} animation={'fade'} navButtonsAlwaysVisible={true} stopAutoPlayOnHover={true} indicators={false}>
+                <div className={common.sectionName} id={props.id}>
+                    <span>My projects</span>
+                </div>
+                <div className={common.sectionItemsField }>
+                    <Carousel className={`${common.carousel} ${s.carousel}`} animation={'fade'} navButtonsAlwaysVisible={true} stopAutoPlayOnHover={true} indicators={false}>
                         <Project pic={pr1}
+
                                  name={'Social Network'}
-                                 description={'Social network without graphic design. Used class and functional components, Redux'}
+                                 description={'Social network without graphic design. Used class and functional components, Redux '}
                                  link={'https://pikadorius.github.io/Samurai-way-SN/'}/>
                         <Project pic={pr2}
                                  name={'Todolist'}
-                                 description={'Todolist on Redux. Used universal components and Material UI.'}
+                                 description={'Todolist on Redux. Used universal components, Material UI.'}
                                  link={'https://pikadorius.github.io/todolist4/'}/>
                         <Project pic={pr3}
                                  name={'Counter'}
-                                 description={'Counter or Redux with Dan Abramov method \n to save and load loaclStorage data.'}
+                                 description={'Counter or Redux with Dan Abramov method \n to save and load from localStorage.'}
                                  link={'https://pikadorius.github.io/counter3/'}/>
                     </Carousel>
-                    <div className={common.empty}></div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

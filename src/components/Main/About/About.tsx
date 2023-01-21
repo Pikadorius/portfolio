@@ -9,7 +9,7 @@ type AboutType = {
 
 const About = (props: AboutType) => {
     return (
-        <div className={`${common.sectionWrapper} ${s.wrapper}`} id={props.id}>
+        <section className={`${common.sectionWrapper} ${s.wrapper}`} id={props.id}>
             <div className={s.myCard}>
                 <Borders/>
                 <div className={s.infoText}>
@@ -29,7 +29,7 @@ const About = (props: AboutType) => {
                         English. Open to your suggestions</p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

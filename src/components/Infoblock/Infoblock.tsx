@@ -20,7 +20,7 @@ const Infoblock = () => {
     }, [])
 
     return (
-        <div className={s.wrapper}>
+        <aside className={s.wrapper}>
             <Fade appear={true} in={true} timeout={6000}>
             <div className={s.infoBlock}>
                 <div className={s.border1}></div>
@@ -50,7 +50,7 @@ const Infoblock = () => {
                 <h3 style={{zIndex:'1'}}><a className={common.superLink} href={'#contacts'}>Hire me</a></h3>
             </div>
             </Fade>
-        </div>
+        </aside>
     )
         ;
 };

@@ -31,16 +31,14 @@ const Skills = (props: SkillsType) => {
         )
     })
 
-
-
     if (width < 748) {
         return (
-            <div className={common.sectionWrapper}>
+            <section className={common.sectionWrapper}>
                 <div className={common.sectionContainer}>
                     <Borders/>
                     <div className={common.sectionName} id={props.id}><span>My skills</span></div>
                     <div className={common.sectionItemsField}>
-                        <Carousel className={common.carousel} animation={'slide'}
+                        <Carousel className={`${common.carousel} ${s.carousel}`} animation={'slide'}
                                   navButtonsAlwaysVisible={true} stopAutoPlayOnHover={true} indicators={false}>
                             {
                                 skills.map((skill=>{
@@ -55,17 +53,17 @@ const Skills = (props: SkillsType) => {
 
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 
     return (
-        <div className={common.sectionWrapper}>
+        <section className={common.sectionWrapper}>
             <div className={common.sectionContainer}>
                 <Borders/>
                 <div className={common.sectionName} id={props.id}><span>My skills</span></div>
                 <div className={common.sectionItemsField}>
-                    <Carousel className={common.carousel} animation={'slide'} navButtonsAlwaysVisible={true} stopAutoPlayOnHover={true} indicators={false}>
+                    <Carousel className={`${common.carousel} ${s.carousel}`} animation={'slide'} navButtonsAlwaysVisible={true} stopAutoPlayOnHover={true} indicators={false}>
                         <div className={s.threeSkillsField}>
                             {SkillsField[0]}
                             {SkillsField[1]}
@@ -86,12 +84,10 @@ const Skills = (props: SkillsType) => {
                             {SkillsField[10]}
                             {SkillsField[11]}
                         </div>
-
                     </Carousel>
-
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
