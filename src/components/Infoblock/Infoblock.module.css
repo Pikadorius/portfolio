@@ -20,8 +20,8 @@
     align-items: center;
     color: white;
 
-    -webkit-animation: pulsing 2s infinite;
-    animation: pulsing 2s infinite;
+    -webkit-animation: pulsing 3s infinite;
+    animation: pulsing 3s infinite;
 }
 
 
@@ -54,7 +54,8 @@
 }
 
 .infoBlock:hover .border1, .infoBlock:hover .border2{
-    border-color: rgba(255,255,255,.4);
+    -webkit-animation: pulsing 3s infinite;
+    animation: transfusion 3s infinite;
 }
 
 
@@ -76,30 +77,9 @@
 .shining {
     color: #987750;
     text-align: center;
-    text-transform: uppercase;/*
-    background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    !*animation: shine 3s infinite linear;*!*/
+    text-transform: uppercase;
 }
 
-@keyframes shine {
-    0% {
-        background-position: 0;
-    }
-    60% {
-        background-position: 600px;
-    }
-    100% {
-        background-position: 600px;
-    }
-    60% {
-        background-position: 600px;
-    }
-    0% {
-        background-position: 0;
-    }
-}
 
 @-webkit-keyframes pulsing {
     0% {
@@ -122,5 +102,30 @@
     }
     100% {
         transform: scale(0.9, 0.9);
+    }
+}
+
+
+@-webkit-keyframes transfusion {
+    0% {
+        border-color: #987750;
+    }
+    50% {
+        border-color:  rgba(255,255,255,.2);
+    }
+    100% {
+        border-color: #987750;
+    }
+}
+
+@keyframes transfusion {
+    0% {
+        border-color: #987750;
+    }
+    50% {
+        border-color:  rgba(255,255,255,.2);
+    }
+    100% {
+        border-color: #987750;
     }
 }

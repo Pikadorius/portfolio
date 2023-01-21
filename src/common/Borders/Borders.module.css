@@ -21,5 +21,30 @@
 }
 
 .container:hover .border1, .container:hover .border2 {
-    border-color: rgba(255,255,255,.4);
+    -webkit-animation: pulsing 3s infinite;
+    animation: transfusion 3s infinite;
+}
+
+@-webkit-keyframes transfusion {
+    0% {
+        border-color: #987750;
+    }
+    50% {
+        border-color:  rgba(255,255,255,.2);
+    }
+    100% {
+        border-color: #987750;
+    }
+}
+
+@keyframes transfusion {
+    0% {
+        border-color: #987750;
+    }
+    50% {
+        border-color:  rgba(255,255,255,.2);
+    }
+    100% {
+        border-color: #987750;
+    }
 }
