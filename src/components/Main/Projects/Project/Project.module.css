@@ -6,9 +6,10 @@
     align-items: center;
     justify-content: space-between;
     width: 60%;
-    min-height: 40vh;
+    height: 45vh;
     border: 1px solid;
     margin: 2% auto;
+    padding-bottom: 2%;
 }
 
 .projectName {

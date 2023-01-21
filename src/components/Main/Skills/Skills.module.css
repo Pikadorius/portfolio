@@ -1,11 +1,12 @@
 .oneSkillField {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .threeSkillsField {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }

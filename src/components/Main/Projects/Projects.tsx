@@ -23,7 +23,7 @@ const Projects = (props: ProjectsType) => {
 
                 <div className={common.sectionItemsField}>
 
-                    <Carousel className={common.carousel} animation={'fade'} navButtonsAlwaysVisible={true}>
+                    <Carousel className={common.carousel} animation={'fade'} navButtonsAlwaysVisible={true} stopAutoPlayOnHover={true} indicators={false}>
                         <Project pic={pr1}
                                  name={'Social Network'}
                                  description={'Social network without graphic design. Used class and functional components, Redux'}
@@ -37,6 +37,7 @@ const Projects = (props: ProjectsType) => {
                                  description={'Counter or Redux with Dan Abramov method \n to save and load loaclStorage data.'}
                                  link={'https://pikadorius.github.io/counter3/'}/>
                     </Carousel>
+                    <div className={common.empty}></div>
                 </div>
             </div>
         </div>

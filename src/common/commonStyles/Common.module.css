@@ -44,12 +44,6 @@
     justify-content: space-around;
 }
 
-@media (max-width: 748px) {
-    .sectionContainer {
-        width: 95%;
-    }
-}
-
 /*links*/
 .superLink {
     font-size: 24px;
@@ -73,5 +67,18 @@
 
 .carousel {
     width: 100%;
-    margin: 2%;
+    padding-bottom: 2%;
+}
+
+.empty {
+    height: 20px;
+}
+
+@media (max-width: 748px) {
+    .sectionContainer {
+        width: 95%;
+    }
+    .carousel {
+        padding-bottom: 10%;
+    }
 }

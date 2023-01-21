@@ -1,14 +1,14 @@
 .skillCard {
-    height: 200px;
+    border-radius: 5px;
+    min-height: 250px;
     box-sizing: border-box;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 25%;
-    border: 1px solid;
+    justify-content: space-around;
     margin: 2% 0;
+    width: 25%;
 }
 
 .logo {
@@ -41,8 +41,12 @@
     color: #888888;
 }
 
+.popUp {
+    text-align: center;
+}
+
 @media (max-width: 748px){
     .skillCard {
-        width: 80%;
+        width: 60%;
     }
 }

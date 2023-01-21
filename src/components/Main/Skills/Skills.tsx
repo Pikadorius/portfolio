@@ -14,7 +14,6 @@ type SkillsType = {
     id: string
 }
 
-
 const Skills = (props: SkillsType) => {
 
     const skills = useSelector<StateType, SkillType[]>(state => state.skills)
@@ -23,11 +22,16 @@ const Skills = (props: SkillsType) => {
 
     const SkillsField = skills.map(skill => {
         return (
-            <div className={s.oneSkillField}>
-                <Skill key={skill.id} logo={skill.logo} title={skill.title} description={skill.description} id={s.id}/>
-            </div>
+                <Skill
+                    key={skill.id}
+                    logo={skill.logo}
+                    title={skill.title}
+                    description={skill.description}
+                    id={s.id}/>
         )
     })
+
+
 
     if (width < 748) {
         return (
@@ -37,8 +41,16 @@ const Skills = (props: SkillsType) => {
                     <div className={common.sectionName} id={props.id}><span>My skills</span></div>
                     <div className={common.sectionItemsField}>
                         <Carousel className={common.carousel} animation={'slide'}
-                                  navButtonsAlwaysVisible={true}>
-                            {SkillsField}
+                                  navButtonsAlwaysVisible={true} stopAutoPlayOnHover={true} indicators={false}>
+                            {
+                                skills.map((skill=>{
+                                    return (
+                                        <div key={skill.id} className={s.oneSkillField}>
+                                            <Skill logo={skill.logo} title={skill.title} description={skill.description} id={s.id}/>
+                                        </div>
+                                    )
+                                }))
+                            }
                         </Carousel>
 
                     </div>
@@ -53,7 +65,7 @@ const Skills = (props: SkillsType) => {
                 <Borders/>
                 <div className={common.sectionName} id={props.id}><span>My skills</span></div>
                 <div className={common.sectionItemsField}>
-                    <Carousel className={common.carousel} animation={'slide'} navButtonsAlwaysVisible={true}>
+                    <Carousel className={common.carousel} animation={'slide'} navButtonsAlwaysVisible={true} stopAutoPlayOnHover={true} indicators={false}>
                         <div className={s.threeSkillsField}>
                             {SkillsField[0]}
                             {SkillsField[1]}
