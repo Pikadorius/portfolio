@@ -33,7 +33,9 @@ export default function HeroBanner() {
             );
         }
         return () => {
-            if (vantaEffect) setVantaEffect(0)
+            if (vantaEffect) { // @ts-ignore
+                vantaEffect.destroy()
+            }
         };
     }, [vantaEffect]);
 
