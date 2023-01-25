@@ -50,7 +50,6 @@ const Skills = (props: SkillsType) => {
                                 }))
                             }
                         </Carousel>
-
                     </div>
                 </div>
             </section>

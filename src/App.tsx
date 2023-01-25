@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Infoblock from './components/Infoblock/Infoblock';
 import HideAppBar from './common/AppBar/AppBar';
+import HeroBanner from './test/test';
 
 /*
 import IconButton from '@mui/material/IconButton';
@@ -30,9 +31,12 @@ function App() {
     });*/
 
     return (
-        <div className="App">
+        <div className="App" id={'root'}>
+            <HeroBanner/>
+
             <HideAppBar children={<Header/>}/>
             <div className={'divider'}>
+
                 <Infoblock/>
                 <Main/>
             </div>

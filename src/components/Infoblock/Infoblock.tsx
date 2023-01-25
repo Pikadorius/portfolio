@@ -20,7 +20,9 @@ const Infoblock = () => {
     }, [])
 
     return (
+
         <aside className={s.wrapper}>
+
             <Fade appear={true} in={true} timeout={6000}>
             <div className={s.infoBlock}>
                 <div className={s.border1}></div>

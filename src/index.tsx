@@ -20,7 +20,7 @@ root.render(
     <React.StrictMode>
         <ThemeProvider theme={darkTheme}>
             <Provider store={store}>
-                <App/>
+                <App />
             </Provider>
         </ThemeProvider>
     </React.StrictMode>

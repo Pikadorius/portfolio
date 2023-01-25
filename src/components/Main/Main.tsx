@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 import Slide from '@mui/material/Slide';
 import Skills from './Skills/Skills';
 import Projects from './Projects/Projects';
+import HeroBanner from '../../test/test';
 
 
 const Main = () => {
