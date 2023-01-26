@@ -10,6 +10,7 @@ type ProjectType = {
     name: string
     description: string
     link: string
+    codeLink: string
 }
 
 const Project = (props: ProjectType) => {
@@ -22,12 +23,15 @@ const Project = (props: ProjectType) => {
             }}>
                 <div className={s.btnWrapper}>
                         <Button target={'_blank'} href={props.link} variant={'text'} size={'large'} className={s.btn}>
-                            <PreviewIcon fontSize={'large'} className={s.btnIcon}/>
+                            <PreviewIcon className={s.btnIcon} sx={{fontSize: '80px'}}/>
                         </Button>
                 </div>
             </div>
             <div className={s.projectName}>{props.name}</div>
             <div className={s.projectDescription}>{props.description}</div>
+            <div className={s.sendBtn}>
+                <a rel={'noreferrer'} href={props.codeLink} target={'_blank'} className={s.codeBtn}>Watch code</a>
+            </div>
         </Paper>
     );
 };

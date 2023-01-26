@@ -22,21 +22,25 @@ const Projects = (props: ProjectsType) => {
                 <div className={common.sectionName} id={props.id}>
                     <span>My projects</span>
                 </div>
-                <div className={common.sectionItemsField }>
-                    <Carousel className={`${common.carousel} ${s.carousel}`} animation={'fade'} navButtonsAlwaysVisible={true} stopAutoPlayOnHover={true} indicators={false}>
+                <div className={common.sectionItemsField}>
+                    <Carousel className={`${common.carousel} ${s.carousel}`} animation={'fade'}
+                              navButtonsAlwaysVisible={true} stopAutoPlayOnHover={true} indicators={false}>
                         <Project pic={pr1}
 
                                  name={'Social Network'}
-                                 description={'Social network without graphic design. Used class and functional components, Redux '}
-                                 link={'https://pikadorius.github.io/Samurai-way-SN/'}/>
+                                 description={'Social network. Used class and functional components, Redux, Redux-Form'}
+                                 link={'https://pikadorius.github.io/Samurai-way-SN/'}
+                                 codeLink={'https://github.com/Pikadorius/Samurai-way-SN'}/>
                         <Project pic={pr2}
                                  name={'Todolist'}
-                                 description={'Todolist on Redux. Used universal components, Material UI.'}
-                                 link={'https://pikadorius.github.io/todolist4/'}/>
+                                 description={'Todolist on Redux. Used universal components, Material UI, Axios'}
+                                 link={'https://pikadorius.github.io/todolist-on-redux/'}
+                                 codeLink={'https://github.com/Pikadorius/todolist-on-redux'}/>
                         <Project pic={pr3}
                                  name={'Counter'}
-                                 description={'Counter or Redux with Dan Abramov method \n to save and load from localStorage.'}
-                                 link={'https://pikadorius.github.io/counter3/'}/>
+                                 description={'Counter on Redux with Dan Abramov method \n to save and load from localStorage.'}
+                                 link={'https://pikadorius.github.io/counter3/'}
+                                 codeLink={'https://github.com/Pikadorius/counter3'}/>
                     </Carousel>
                 </div>
             </div>

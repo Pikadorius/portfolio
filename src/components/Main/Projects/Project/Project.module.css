@@ -35,6 +35,8 @@
 }
 
 .btn {
+    width: 100px;
+    height: 100px;
     background-color: #1d1b19;
     box-shadow: inset 0 0 0 0 #987750;
     color: #987750;
@@ -52,10 +54,10 @@
 
 .btnIcon {
     color:#987750;
-    width: 100%;
+    width: 150px;
 }
 
-.btnIcon:hover {
+.btn:hover .btnIcon{
     color: white;
     transition: color 2s ease-out 100ms
 }
@@ -66,4 +68,31 @@
     }
 }
 
+
+.codeBtn {
+    text-decoration: none;
+    border: 1px solid #987750;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    background-color: #1d1b19;
+    box-shadow: inset 0 0 0 0 #987750;
+    color: #987750;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.codeBtn:hover {
+    transition: color 2s ease-out 100ms
+}
+
+.codeBtn:hover {
+    box-shadow: inset 130px 0 0 0 #987750;
+    color: white;
+}
 
