@@ -20,6 +20,7 @@
     "@types/styled-components": "^5.1.26",
     "@types/three": "^0.148.1",
     "@types/uuid": "^9.0.0",
+    "formik": "^2.2.9",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-animated-text-content": "^1.0.1",
