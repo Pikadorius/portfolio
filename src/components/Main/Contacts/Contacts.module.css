@@ -25,6 +25,7 @@
 }
 
 .btn {
+    margin-bottom: 20px;
     border: 1px solid #987750;
     outline: none;
     font-size: 20px;
@@ -57,4 +58,9 @@
     .item {
         width: 100%;
     }
+}
+
+.desc {
+    max-width: 90%;
+    text-align: center;
 }
