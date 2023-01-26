@@ -29,7 +29,7 @@ const Contacts = (props: ContactsType) => {
                     </div>
                 </form>
                 <div className={s.sendBtn}>
-                    <button>Send</button>
+                    <button className={s.btn}>Send</button>
                 </div>
             </div>
         </section>

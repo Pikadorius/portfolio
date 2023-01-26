@@ -4,7 +4,7 @@ import common from '../../common/commonStyles/Common.module.css'
 import insta from '../../assets/icons/contacts/instagramm.png'
 import linked from '../../assets/icons/contacts/linked2.png'
 import git from '../../assets/icons/contacts/git.png'
-import vk from '../../assets/icons/contacts/vk.png'
+import telegramm from '../../assets/icons/contacts/telegramm.png'
 import Borders from '../../common/Borders/Borders';
 
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
                     </div>
                     <div className={s.item}>
                         <a rel="noreferrer" target='_blank'
-                           href={'https://www.linkedin.com/in/%D0%B5%D0%B3%D0%BE%D1%80-%D0%BA%D0%B0%D1%80%D0%BF%D1%83%D0%BA-0a7a66259/'}><img
+                           href={'https://www.linkedin.com/in/karpuk-egor/'}><img
                             src={linked} alt={"LinkedIn"}/></a>
                     </div>
                     <div className={s.item}>
@@ -28,10 +28,10 @@ const Footer = () => {
                                                                                                         alt={"Github"}/></a>
                     </div>
                     <div className={s.item}>
-                        <a rel="noreferrer" target='_blank' href={'https://vk.com/e_karpuk'}><img src={vk} alt={"VK"}/></a>
+                        <a rel="noreferrer" target='_blank' href={'https://t.me/Pikadorius'}><img src={telegramm} alt={"telegramm"}/></a>
                     </div>
                 </div>
-                <div className={s.copyRights}> © 2022 All rights reserved</div>
+                <div className={s.copyRights}> © 2023 All rights reserved</div>
             </div>
         </footer>
     );
