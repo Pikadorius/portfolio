@@ -33,6 +33,12 @@
     width: 90%;
 }
 
+.desc::before {
+    content: " ○ ";
+    color: #987750;
+}
+
+
 @media (max-width: 748px) {
     .myCard {
         width: 95%;
