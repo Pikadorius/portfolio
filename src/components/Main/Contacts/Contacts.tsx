@@ -66,7 +66,8 @@ const Contacts = (props: ContactsType) => {
         reset,
         formState: {errors},
     } = useForm<FormType>({
-        resolver: yupResolver(schema)
+        resolver: yupResolver(schema),
+        mode: 'onTouched'
     });
     const submit = (data: FormType) => {
         console.log(data)
@@ -87,22 +88,24 @@ const Contacts = (props: ContactsType) => {
                         {...register('name')}
                         className={s.formField}
                         sx={style}
-                        label={errors.name? errors.name.message : 'Name'}
+                        label={'Name'}
                         InputLabelProps={{
                             sx: TextFieldStyle
                         }}
                     />
+                    <p style={{color: '#d35151'}}>{errors.name && errors.name.message}</p>
 
                     <TextField
                         disabled={isLoading}
                         {...register('email')}
                         className={s.formField}
                         sx={style}
-                        label={errors.email? errors.email.message : 'Email'}
+                        label={'Email'}
                         InputLabelProps={{
                             sx: TextFieldStyle
                         }}
                     />
+                    <p style={{color: '#d35151'}}>{errors.email && errors.email.message}</p>
 
                     <TextField
                         disabled={isLoading}
@@ -121,14 +124,14 @@ const Contacts = (props: ContactsType) => {
                         {...register('message')}
                         className={s.formField}
                         sx={style}
-                        label={errors.message? errors.message.message : 'Message'}
+                        label={'Message'}
                         InputLabelProps={{
                             sx: TextFieldStyle
                         }}
                         multiline={true}
                         rows={4}
                     />
-
+                    <p style={{color: '#d35151'}}>{errors.message && errors.message.message}</p>
 
                     <div className={s.sendBtn}>
                         <button disabled={isLoading}
