@@ -25,7 +25,7 @@ const TextFieldStyle = {
     [`&.${inputLabelClasses.focused}`]: {
         // set the color of the label when shrinked (usually when the TextField is focused)
         color: "#987750",
-    },
+    }
 }
 
 
@@ -53,7 +53,6 @@ const schema = yup.object({
 
 
 const Contacts = (props: ContactsType) => {
-
 
     const status = useAppSelector(state => state.app.status)
     const isLoading = status === 'loading'
