@@ -37,6 +37,10 @@
     content: " ○ ";
     color: #987750;
 }
+.sugg::before, .sugg::after {
+    content: " ○ ";
+    color: #987750;
+}
 
 
 @media (max-width: 748px) {

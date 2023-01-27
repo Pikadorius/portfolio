@@ -27,7 +27,7 @@ const About = (props: AboutType) => {
                         my family.</p>
                     <p className={s.desc}>Now I am also improving my English (my current level - pre-intermediate).</p>
 
-                    <h4>Open to your suggestions</h4>
+                    <h4 className={s.sugg}>Open to your suggestions</h4>
                 </div>
             </div>
         </section>
