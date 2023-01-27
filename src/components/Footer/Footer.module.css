@@ -28,6 +28,13 @@
     width: 100%;
 }
 
+.item:hover {
+    transform: rotate(10deg);
+    scale: 1.5;
+    transition: 0.5s;
+    color: gold
+}
+
 
 @media (max-width: 480px) {
     .container {

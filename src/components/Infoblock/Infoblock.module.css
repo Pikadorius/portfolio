@@ -32,7 +32,17 @@
     -webkit-box-shadow: 10px 16px 5px 2px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 10px 16px 5px 2px rgba(0, 0, 0, 0.6);
     box-shadow: 10px 16px 5px 2px rgba(0, 0, 0, 0.6);
-    margin-bottom: 4%;
+    margin: 5%;
+}
+
+.hireLink {
+    -webkit-animation: dissapear 2s infinite;
+    animation: dissapear 2s infinite;
+}
+
+.hireLink:hover {
+    -webkit-animation: none;
+    animation: none;
 }
 
 
@@ -59,7 +69,7 @@
 }
 
 .infoBlock:hover .border1, .infoBlock:hover .border2{
-    -webkit-animation: pulsing 3s infinite;
+    -webkit-animation: transfusion 3s infinite;
     animation: transfusion 3s infinite;
 }
 
@@ -132,5 +142,39 @@
     }
     100% {
         border-color: rgba(255,255,255,.2);
+    }
+}
+
+
+
+@-webkit-keyframes dissapear {
+    0% {
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+    50% {
+        opacity:   0.1;
+        transform: scale(1, 1);
+
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+}
+
+@keyframes dissapear {
+    0% {
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+    50% {
+        opacity:   0.1;
+        transform: scale(1, 1);
+
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.2, 1.2);
     }
 }

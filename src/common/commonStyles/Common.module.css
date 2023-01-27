@@ -54,14 +54,10 @@
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-
 .superLink:hover {
-    transition: color 2s ease-out 100ms
-}
-
-.superLink:hover {
-    box-shadow: inset 100px 0 0 0 #987750;
+    box-shadow: inset 110px 0 0 0 #987750;
     color: white;
+    transition: color 2s ease-out 100ms
 }
 
 .carousel {
