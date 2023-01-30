@@ -4,6 +4,8 @@ import common from '../../common/commonStyles/Common.module.css'
 import myself from '../../assets/pics/aboutme.jpg';
 import AnimatedText from 'react-animated-text-content';
 import Fade from '@mui/material/Fade';
+import DownloadIcon from '@mui/icons-material/Download';
+import CV from '../../assets/CV/KEA_CV.pdf'
 
 const Infoblock = () => {
     const init = ['Front-End Developer', 'Egor Karpuk', 'Experienced specialist', 'Ready to work']
@@ -49,9 +51,16 @@ const Infoblock = () => {
                     >
                         {text}
                     </AnimatedText>
-                    <h1 className={s.hireLink} style={{zIndex: '1'}}><a className={`${common.superLink}`} href={'#contacts'}>
-                        HIRE ME
-                    </a></h1>
+                    <h1 className={s.hireLink} style={{zIndex: '1'}}>
+                        <a className={`${common.superLink}`} href={'#contacts'}>
+                            HIRE ME
+                        </a>
+                    </h1>
+                    <h1 className={s.cv}>
+                        <a href={CV} download className={s.loadLink}>
+                            Download CV <DownloadIcon/>
+                        </a>
+                    </h1>
                 </div>
             </Fade>
         </aside>
