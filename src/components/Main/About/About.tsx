@@ -15,17 +15,13 @@ const About = (props: AboutType) => {
                 <div className={s.infoText}>
                     <h3 className={s.subtitle}>About me</h3>
                     <h2 className={s.title}>Front-end Developer</h2>
-                    <p className={s.desc}>I'm Front-End developer with experience in creating SPA using React,
-                        Redux/Redux Toolkit, TypeScript.I am improving my skills in this direction and plan to expand them with new
-                        technologies, such
-                        as Angular or React Native.</p>
-                    <p className={s.desc}>In the future I plan to become a full-stack developer, because I love learning
-                        new things and
-                        exercising my brain :)</p>
-                    <p className={s.desc}>In my free time I like to read, solve some katas on Codewars, ride a bicycle
-                        and spent time with
-                        my family.</p>
-                    <p className={s.desc}>Now I am also improving my English (my current level - pre-intermediate).</p>
+                    <p className={s.desc}>Experienced Front-End developer with knowledge in creating
+                        SPA using React, Redux/Redux Toolkit, TypeScript</p>
+                    <p className={s.desc}>Improving my skills and trying to follow the latest and most
+                        effective technologies</p>
+                    <p className={s.desc}>Planning to study React Native, because my next focus is
+                        to become a mobile developer</p>
+                    <p className={s.desc}>Now I am also improving my English with tutor (my current level - pre-intermediate)</p>
 
                     <h4 className={s.sugg}>Open to your suggestions</h4>
                 </div>
