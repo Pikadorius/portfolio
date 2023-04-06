@@ -45,7 +45,7 @@ const Projects = (props: ProjectsType) => {
                         <Project pic={pr4}
                                  name={'Todolist'}
                                  description={'My vision of todolist. Custom components, RHF, RRD, Redux Toolkit.'}
-                                 link={'https://pikadorius.github.io/new_todo/'}
+                                 link={'https://what-todo-app-kea.vercel.app/'}
                                  codeLink={'https://github.com/Pikadorius/new_todo'}/>
                         <Project pic={pr5}
                                  name={'Learning Cards App'}
