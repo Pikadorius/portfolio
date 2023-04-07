@@ -1,6 +1,6 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit';
-import {appReducer} from '../reducers/appReducer';
-import {skillsReducer} from '../reducers/skillsReducer';
+import {appReducer} from 'reducers/appReducer';
+import {skillsReducer} from 'reducers/skillsReducer';
 import {TypedUseSelectorHook, useDispatch, useSelector} from 'react-redux';
 
 const reducer = combineReducers({

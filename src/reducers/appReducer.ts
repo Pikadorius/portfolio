@@ -1,7 +1,7 @@
 //@ts-ignore
 import emailjs from 'emailjs-com';
-import {FormType} from '../components/Main/Contacts/Contacts';
-import {AppDispatchType} from '../redux/store';
+import {FormType} from 'components/Main/Contacts/Contacts';
+import {AppDispatchType} from 'redux/store';
 
 export type StatusType = 'idle' | 'loading' | 'failed'
 
