@@ -5,18 +5,18 @@ import {AppDispatchType} from 'redux/store';
 
 export type StatusType = 'idle' | 'loading' | 'failed'
 
-type InititalAppType = {
+type InitialAppType = {
     status: StatusType
     error: string | null
 }
 
 
-const initialState: InititalAppType = {
+const initialState: InitialAppType = {
     status: 'idle',
     error: null
 }
 
-export const appReducer = (state = initialState, action: ActionType): InititalAppType=> {
+export const appReducer = (state = initialState, action: ActionType): InitialAppType=> {
     switch (action.type) {
         case 'SET_STATUS': {
             return {...state, status: action.status}
